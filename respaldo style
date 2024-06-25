@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+}
+.nav{
+justify-content: center;
+}
+
+
+.image-container {
+    width: 250px; /* Asegúrate de que el contenedor sea cuadrado */
+    height: 250px;
+    overflow: hidden; /* Escondiendo el exceso para que la imagen se ajuste bien */
+    margin: auto;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para ajustar la imagen dentro del contenedor */
+}
+.container{
+    color: white;
+    font-family: monospace;
+}
+
+
+.row{
+    padding-top: 150px;
+    margin: 20px;
+}
+.row h3{
+    text-align: center;
+    color: white;
+}
+.card{
+    background-color: rgb(0, 0, 0);
+    border-color: blue;
+    color: white;
+    border-width: 4px;
+}
+.card-body a{
+    background-color: rgb(0, 0, 0);
+}
+.card-body img{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+
+

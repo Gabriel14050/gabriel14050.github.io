@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link   rel="stylesheet" href="style.css">
+    <title>Gabriel Jaramillo </title>
+</head>
+<style>
+  .typing {
+      font-family: monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: .15em solid transparent;
+  }
+  .typing::after {
+      content: '|';
+      display: inline-block;
+      animation: blink-caret .75s step-end infinite;
+      border-right: none;
+  }
+  @keyframes blink-caret {
+      from, to { opacity: 0 }
+      50% { opacity: 1 }
+  }
+</style>
+</head>
+<body>
+
+<ul class="nav nav-tabs">
+<li class="nav-item">
+  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#habilidades">Habilidades</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#">Proyectos</a>
+</li>
+</ul>
+
+<div class="container mt-5">
+<div class="text-center">
+  <div class="image-container">
+      <img src="img/yo.jpg" class="rounded-circle" alt="Imagen Circular">
+  </div>
+</div>
+<h1 class="typing" id="title-text"></h1>
+<h2 class="typing" id="subtitle-text"></h2>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  typeText("#title-text", "Soy Gabriel", 100);
+  typeText("#subtitle-text", "Estudiante y Programador en proceso", 100);
+});
+
+function typeText(selector, text, speed) {
+  let i = 0;
+  const element = document.querySelector(selector);
+  element.textContent = "";
+  const type = () => {
+      if (i < text.length) {
+          element.textContent += text.charAt(i);
+          i++;
+          setTimeout(type, speed);
+      } else {
+          element.classList.remove('typing'); // Remove typing class once text is fully written
+      }
+  }
+  type();
+}
+</script>
+    
+
+
+  
+
+
+
+
+
+  
+    <div id="habilidades" class="row">
+        <h3>Habilidades</h3>
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+                <div class="card-body">
+                <h5 class="card-title">HTML</h5>
+                <img src="img/html-Photoroom.png">
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">CSS</h5>
+                <img src="img/css-Photoroom.png">
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+    </div>
+    
+  </div>
+  <div style="padding-top: 10px;" id="habilidades" class="row">
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">PHP</h5>
+                <img src="img/html-Photoroom.png">
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">JAVA SCRIPT</h5>
+                <img src="img/html-Photoroom.png">
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

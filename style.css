@@ -1,0 +1,300 @@
+body{
+    background-color: rgb(51, 51, 51);
+    
+
+    
+}
+.image-container{
+
+}
+.nav {
+    margin: auto;
+    position: relative;
+    
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 5px solid rgb(0, 38, 255); /* Grosor del borde azul */
+    border-radius: 0 0 1000px 1000px; /* Ajusta la curvatura del borde */
+    background-color: rgb(51, 51, 51);
+}
+.nav-link.inicio {
+    border-radius: 5px; /* Bordes redondeados */
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background: none;
+    color: white;
+    font-size: xx-large;
+    border: 0cap;
+}
+
+
+.image-container {
+    width: 250px; /* Asegúrate de que el contenedor sea cuadrado */
+    height: 250px;
+    overflow: hidden; /* Escondiendo el exceso para que la imagen se ajuste bien */
+    margin: auto;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para ajustar la imagen dentro del contenedor */
+}
+.container{
+    color: white;
+    font-family: monospace;
+}
+.container h2 {
+    text-align: center;
+    
+}
+.container h1 {
+    text-align: center;
+    
+}
+.nav-item a{
+    color: rgb(255, 255, 255);
+    padding-left: 0px;
+    text-decoration: none;
+
+    
+    
+
+}
+
+
+.habilidades{
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+}
+.habilidades h1{
+  color: white;
+  padding-top: 30px;
+  
+}
+.habilidades h2{
+  color: white;
+  padding-top: 30px;
+  
+}
+.habilidades figcaption{
+  color: whitesmoke;
+  font-size: 20PX;
+}
+.figure img{
+  width: 225px;
+  height: 225px;
+}
+.figure {
+  display: inline-block; /* Asegúrate de que las figuras se alineen horizontalmente */
+  margin: 10px; /* Espaciado entre las imágenes */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.figure img {
+  width: 225px;
+  height: 225px;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Añade una transición suave */
+}
+
+/* Agranda la imagen seleccionada */
+.figure:hover img {
+  transform: scale(1.5);
+  filter: brightness(1.2);
+}
+
+/* Reduce el tamaño de todas las imágenes que no están en hover */
+.figure:not(:hover) img {
+  transform: scale(0.8);
+  filter: brightness(0.8);
+}
+
+/* Evita que la imagen en hover se vea afectada por el selector anterior */
+.figure:hover img {
+  transform: scale(1.1) !important; /* Agranda la imagen seleccionada */
+  filter: brightness(1.2) !important; /* Ajusta el brillo para resaltar */
+  
+}
+
+
+
+.proyectos {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+  padding-top: 100px;
+  display: flex; /* Añadido para habilitar flexbox */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Opcional: centra verticalmente el contenido */
+  flex-direction: column; /* Opcional: asegúrate de que los elementos hijos se alineen en columna */
+}
+
+.proyectos h1 {
+  text-align: center;
+  
+}
+.proyectos h2 {
+  padding-top: 60px;
+}
+
+.pri {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto; /* Añadido para centrar el div */
+}
+
+.pri img {
+  width: 600px;
+  height: 400px;
+  margin-right: 20px;
+}
+
+.pri h3 {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  color: white;
+  text-align: center;
+}
+
+  /* Media Queries para Responsividad */
+  @media (max-width: 1200px) {
+    
+    .pri img {
+      width: 500px; /* Ajusta el tamaño de la imagen para pantallas medianas */
+      height: auto; /* Mantén la relación de aspecto */
+      margin: 0 auto; /* Centra la imagen */
+      
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .pri {
+      flex-direction: column; /* Cambia a disposición en columna */
+      align-items: flex-start; /* Alinea el contenido al inicio */
+    }
+  
+    .pri img {
+      width: 100%; /* Imagen a 100% del ancho del contenedor */
+      height: auto; /* Mantén la relación de aspecto */
+      margin: 0 0 20px 0; /* Margen inferior para espacio entre imagen y texto */
+    }
+  
+    .pri h3 {
+      text-align: justify; /* Justifica el texto para mejor legibilidad */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .pri {
+      padding: 10px; /* Reduce el padding en pantallas muy pequeñas */
+    }
+  
+    .pri img {
+      width: 100%; /* Imagen a 100% del ancho del contenedor */
+      height: auto; /* Mantén la relación de aspecto */
+    }
+  
+    .pri h3 {
+      font-size: 16px; /* Reduce el tamaño de fuente para mejor ajuste en pantallas pequeñas */
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.typing {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid transparent;
+}
+.typing::after {
+    content: '|';
+    display: inline-block;
+    animation: blink-caret .75s step-end infinite;
+    border-right: none;
+}
+@keyframes blink-caret {
+    from, to { opacity: 0 }
+    50% { opacity: 1 }
+}
+
+
+
+
