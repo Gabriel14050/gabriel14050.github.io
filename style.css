@@ -1,11 +1,5 @@
 body{
     background-color: rgb(51, 51, 51);
-    
-
-    
-}
-.image-container{
-
 }
 .nav {
     margin: auto;
@@ -73,16 +67,18 @@ body{
 .habilidades h1{
   color: white;
   padding-top: 30px;
+  font-size: 45px;
   
 }
 .habilidades h2{
   color: white;
   padding-top: 30px;
+  font-size: 25px;
   
 }
 .habilidades figcaption{
   color: whitesmoke;
-  font-size: 20PX;
+  font-size: 20pX;
 }
 .figure img{
   width: 225px;
@@ -132,13 +128,23 @@ body{
   align-items: center; /* Opcional: centra verticalmente el contenido */
   flex-direction: column; /* Opcional: asegúrate de que los elementos hijos se alineen en columna */
 }
+.contenedorp{
+  text-align: center;
+  background-color: rgba(22, 22, 22, 0.534);
+  padding-bottom: 40px;
+  box-shadow: 0 0 30px rgb(0, 0, 0); /* Sombra en todos los lados */
+  margin-bottom: 40px;
+}
 
 .proyectos h1 {
   text-align: center;
+  font-size: 45px;
   
 }
 .proyectos h2 {
-  padding-top: 60px;
+  padding-top: 40px;
+  font-size: 25px;
+  
 }
 
 .pri {
@@ -154,12 +160,14 @@ body{
   width: 600px;
   height: 400px;
   margin-right: 20px;
+  
 }
 
 .pri h3 {
   margin: 0;
   flex: 1;
   text-align: center;
+  font-size: 24px;
 }
 
 
