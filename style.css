@@ -129,6 +129,7 @@ body{
   flex-direction: column; /* Opcional: asegúrate de que los elementos hijos se alineen en columna */
 }
 .contenedorp{
+  width: 70%;
   text-align: center;
   background-color: rgba(22, 22, 22, 0.534);
   padding-bottom: 40px;
