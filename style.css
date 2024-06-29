@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(0, 4, 29);
     cursor: url('img/c.png'), auto;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -14,7 +14,7 @@ body{
     padding: 10px 0;
     border-bottom: 5px solid rgb(0, 38, 255); /* Grosor del borde azul */
     border-radius: 0 0 1000px 1000px; /* Ajusta la curvatura del borde */
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(0, 4, 29);
 }
 .nav-link.inicio {
     border-radius: 5px; /* Bordes redondeados */
@@ -45,10 +45,19 @@ body{
   margin: auto; /* Centrando el div */
   padding-top: 10px;
   
+  
+  
 }
 .hv h5{
   font-size: 25px;
+  font-weight: bold;
+  
 }
+.hv a{
+  text-decoration: none;
+  
+}
+
 .container{
     color: white;
     font-family: monospace;
@@ -83,10 +92,14 @@ body{
   font-size: 45px;
   
 }
+.hab{
+  text-decoration: none;
+}
 .habilidades h2{
   color: white;
   padding-top: 30px;
   font-size: 25px;
+  
   
 }
 .habilidades figcaption{
@@ -185,35 +198,6 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer{
   color: white;
   text-align: center;
@@ -262,44 +246,6 @@ footer{
     }
   }
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .typing {
     font-family: monospace;
     white-space: nowrap;
@@ -318,5 +264,25 @@ footer{
 }
 
 
+#translate-btn {
+  position: fixed;
+  margin-top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
 
+
+#translate-btn:hover::after {
+  content: "Traducir";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
 

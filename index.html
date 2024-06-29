@@ -1,170 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/b8e64b9b58.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <title>Gabriel Jaramillo </title>
-</head>
-
+  <title>Gabriel Jaramillo</title>
+  
 </head>
 
 <body>
+  <button id="translate-btn" class="btn btn-primary"><i class="fa-solid fa-language" data-hover-text="Traducir"></i> </button>
+
 
   <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link inicio active" aria-current="page" href="#">Inicio</a>
+      <a class="nav-link inicio active" aria-current="page" href="#" data-translate-key="Inicio">Inicio</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#habilidades">Habilidades</a>
+      <a class="nav-link" href="#habilidades" data-translate-key="Habilidades">Habilidades</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#proyectos">Proyectos</a>
+      <a class="nav-link" href="#proyectos" data-translate-key="Proyectos">Proyectos</a>
     </li>
     <li class="nav-item">
-      <a class="fa-brands fa-whatsapp" href="https://www.youtube.com/?app=desktop&hl=es"></a>
+      <a class="fa-brands fa-whatsapp" href=""></a>
       <a class="fa-brands fa-facebook" href="#"></a>
+      
     </li>
-    <h3></h3>
   </ul>
 
   <div class="container mt-5">
     <div class="text-center">
       <div class="image-container">
         <img src="img/yo.jpg" class="rounded-circle" alt="Imagen Circular">
-
       </div>
-      
-
     </div>
     <div class="hv"><a href="https://drive.google.com/file/d/11sW2k1nD1o9gGtx-QFDO0qUfdC669s9X/view">
-      <h5>Hoja de vida</h5>
-    </a>
-  </div>
+      <h5 data-translate-key="Hoja de Vida">Hoja de Vida</h5>
+    </a></div>
     
-    <h1 class="typing" id="title-text"></h1>
-    <h2 class="typing" id="subtitle-text"></h2>
+    <h1 class="typing" id="title-text" data-translate-key="Soy Gabriel Jaramillo">Soy Gabriel Jaramillo</h1>
+    <h2 class="typing" id="subtitle-text" data-translate-key="Estudiante y Programador en proceso">Estudiante y Programador en proceso</h2>
   </div>
-  <!--Habilidades-->
-  <div class="habilidades">
-    <h1>Habilidades</h1>
-    <a href="#proyectos">
-      <h2>Desarrollo web</h2>
+
+  <div class="habilidades" id="habilidades">
+    <h1 data-translate-key="Habilidades">Habilidades</h1>
+    <a href="#proyectos" class="hab">
+      <h2 data-translate-key="Desarrollo Web">Desarrollo Web</h2>
     </a>
 
     <figure class="figure figura1">
       <a href="index.html">
         <img src="img/html-Photoroom.png" class="figure-img img-fluid rounded" alt="HTML">
       </a>
-
-      <figcaption class="figure-caption">HTML</figcaption>
+      <figcaption class="figure-caption" data-translate-key="HTML">HTML</figcaption>
     </figure>
     <figure class="figure figura2">
       <a href="index.html">
         <img src="img/css-Photoroom.png" class="figure-img img-fluid rounded" alt="CSS">
       </a>
-
-      <figcaption class="figure-caption">CSS</figcaption>
+      <figcaption class="figure-caption" data-translate-key="CSS">CSS</figcaption>
     </figure>
     <figure class="figure figura3">
       <a href="index.html">
         <img src="img/js-Photoroom.png" class="figure-img img-fluid rounded" alt="JavaScript">
       </a>
-      <figcaption class="figure-caption">JavaScript</figcaption>
+      <figcaption class="figure-caption" data-translate-key="JavaScript">JavaScript</figcaption>
     </figure>
 
-
-
-    <h2>Programacion</h2>
+    <h2 data-translate-key="Programación">Programación</h2>
     <figure class="figure figura1">
       <a href="index.html">
         <img src="img/py.png" class="figure-img img-fluid rounded" alt="Python">
       </a>
-
-      <figcaption class="figure-caption">Python</figcaption>
+      <figcaption class="figure-caption" data-translate-key="Python">Python</figcaption>
     </figure>
     <figure class="figure figura2">
       <a href="index.html">
         <img src="img/c-Photoroom (1).png" class="figure-img img-fluid rounded" alt="C#">
       </a>
-
-      <figcaption class="figure-caption">C#</figcaption>
+      <figcaption class="figure-caption" data-translate-key="C#">C#</figcaption>
     </figure>
     <figure class="figure figura3">
       <a href="index.html">
         <img src="img/j-Photoroom.png" class="figure-img img-fluid rounded" alt="Java">
       </a>
-      <figcaption class="figure-caption">Java</figcaption>
+      <figcaption class="figure-caption" data-translate-key="Java">Java</figcaption>
     </figure>
-
-
-
   </div>
 
-
-  <!--Proyectos-->
   <div class="proyectos" id="proyectos">
-    <h1>Proyectos</h1>
+    <h1 data-translate-key="Proyectos">Proyectos</h1>
     <div class="contenedorp">
-      <h2>Cattor Restaurante</h2>
+      <h2 data-translate-key="Cattor Restaurante">Cattor Restaurante</h2>
       <div class="pri">
-
         <img src="img/1.png" alt="Cattor Restaurante">
-
-        <h3> Paguina informativa para una fundacion que mediante su restaurante y sus fondoss se encarga de brindar
-          apoyo y buscar un hogar a las mascotas abandonadas</h3>
+        <h3 data-translate-key="Página informativa para una fundación que mediante su restaurante y sus fondos se encarga de brindar apoyo y buscar un hogar a las mascotas abandonadas">
+          Página informativa para una fundación que mediante su restaurante y sus fondos se encarga de brindar apoyo y buscar un hogar a las mascotas abandonadas
+        </h3>
       </div>
     </div>
-
     <div class="contenedorp">
-      <h2>Inicio de Sesion</h2>
+      <h2 data-translate-key="Inicio de Sesión">Inicio de Sesión</h2>
       <div class="pri">
-        <img src="img/iniciio.jpeg" alt="Inicio de Sesion">
-        <h3>Inicios de sesion interactivos y llamativos con la capacidad de registrar e iniciar a los usuarios usando
-          bases de datos </h3>
+        <img src="img/iniciio.jpeg" alt="Inicio de Sesión">
+        <h3 data-translate-key="Inicios de sesión interactivos y llamativos con la capacidad de registrar e iniciar a los usuarios usando bases de datos">
+          Inicios de sesión interactivos y llamativos con la capacidad de registrar e iniciar a los usuarios usando bases de datos
+        </h3>
       </div>
     </div>
-
   </div>
 
+  <footer data-translate-key="Desarrollado por: Gabriel Jaramillo">Desarrollado por: Gabriel Jaramillo</footer>
 
-  <footer>
-    Desarrollado por: Gabriel Jaramillo
-  </footer>
+  
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      typeText("#title-text", "Soy Gabriel", 100);
-      typeText("#subtitle-text", "Estudiante y Programador en proceso", 100);
-    });
-
-    function typeText(selector, text, speed) {
-      let i = 0;
-      const element = document.querySelector(selector);
-      element.textContent = "";
-      const type = () => {
-        if (i < text.length) {
-          element.textContent += text.charAt(i);
-          i++;
-          setTimeout(type, speed);
-        } else {
-          element.classList.remove('typing'); // Remove typing class once text is fully written
-        }
-      }
-      type();
-    }
-  </script>
-
-
-
+  
+  <script src="traductor.js"></script>
+  <script src="type.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-
-    </script>
+  </script>
 </body>
-
 </html>
