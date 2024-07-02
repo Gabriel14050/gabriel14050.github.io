@@ -90,7 +90,7 @@ body{
   color: white;
   padding-top: 30px;
   font-size: 45px;
-  
+  padding-bottom: 10px;
 }
 .hab{
   text-decoration: none;
@@ -211,9 +211,25 @@ body{
   align-items: center; /* Opcional: centra verticalmente el contenido */
   flex-direction: column; /* Opcional: asegúrate de que los elementos hijos se alineen en columna */
 }
+.porta {
+  
+  align-items: center;
+  padding-top: 30px;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto; /* Añadido para centrar el div */
+}
 .portafolio h1{
   padding-bottom: 10px;
 
+}
+.porta img{
+  
+    width: 600px;
+    height: 400px;
+    margin-right: 20px;
+    
+  
 }
 
 
@@ -226,11 +242,18 @@ footer{
   @media (max-width: 1200px) {
     
     .pri img {
-      width: 500px; /* Ajusta el tamaño de la imagen para pantallas medianas */
+      width: 100%; /* Ajusta el tamaño de la imagen para pantallas medianas */
       height: auto; /* Mantén la relación de aspecto */
       margin: 0 auto; /* Centra la imagen */
       
     }
+    .porta img {
+      width: 100%; /* Ajusta el tamaño de la imagen para pantallas medianas */
+      height: auto; /* Mantén la relación de aspecto */
+      margin: 0 auto; /* Centra la imagen */
+      
+    }
+    
   }
   
   @media (max-width: 768px) {
@@ -238,11 +261,22 @@ footer{
       flex-direction: column; /* Cambia a disposición en columna */
       align-items: flex-start; /* Alinea el contenido al inicio */
     }
+    
   
     .pri img {
       width: 100%; /* Imagen a 100% del ancho del contenedor */
       height: auto; /* Mantén la relación de aspecto */
       margin: 0 0 20px 0; /* Margen inferior para espacio entre imagen y texto */
+    }
+    .porta {
+      flex-direction: column; /* Cambia a disposición en columna */
+      align-items: flex-start; /* Alinea el contenido al inicio */
+    }
+    .porta img {
+      width: 100%; /* Ajusta el tamaño de la imagen para pantallas medianas */
+      height: auto; /* Mantén la relación de aspecto */
+      margin: 0 auto; /* Centra la imagen */
+      
     }
   
     .pri h3 {
@@ -254,8 +288,15 @@ footer{
     .pri {
       padding: 10px; /* Reduce el padding en pantallas muy pequeñas */
     }
+    .porta {
+      padding: 10px; /* Reduce el padding en pantallas muy pequeñas */
+    }
   
     .pri img {
+      width: 100%; /* Imagen a 100% del ancho del contenedor */
+      height: auto; /* Mantén la relación de aspecto */
+    }
+    .porta img {
       width: 100%; /* Imagen a 100% del ancho del contenedor */
       height: auto; /* Mantén la relación de aspecto */
     }
