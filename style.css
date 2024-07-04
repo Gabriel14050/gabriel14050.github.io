@@ -232,10 +232,20 @@ body{
   
 }
 
+.contacto a{
+  color: white;
+  text-decoration: none;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin: 10px;
+}
+
+
 
 footer{
   color: white;
   text-align: center;
+  
 }
 
   /* Media Queries para Responsividad */
