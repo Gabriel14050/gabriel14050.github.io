@@ -56,7 +56,7 @@ const translations = {
   
   // Función para traducir la página
   function translatePage(lang) {
-    $('[data-translate-key]').each(function () {
+    $('[data-translate-ke]').each(function () {
       const key = $(this).data('translate-key');
       $(this).text(translations[lang][key]);
     });
