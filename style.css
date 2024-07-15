@@ -3,6 +3,7 @@ body{
     cursor: url('img/c.png'), auto;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .nav {
     margin: auto;
     position: relative;
@@ -72,8 +73,9 @@ body{
 }
 .nav-item a{
     color: rgb(255, 255, 255);
-    padding-left: 0px;
+    
     text-decoration: none;
+    
 
     
     
@@ -207,7 +209,6 @@ body{
   flex-direction: column; /* Opcional: asegúrate de que los elementos hijos se alineen en columna */
 }
 .porta {
-  
   align-items: center;
   padding-top: 30px;
   flex-wrap: wrap;
@@ -216,17 +217,15 @@ body{
 }
 .portafolio h1{
   padding-bottom: 10px;
-
 }
 .porta img{
-  
     width: 600px;
     height: 400px;
     margin-right: 20px;
-    
-  
 }
-
+.contacto{
+  text-align: center;
+}
 .contacto a{
   color: white;
   text-decoration: none;
@@ -234,29 +233,47 @@ body{
   padding-bottom: 10px;
   margin: 10px;
 }
+.fa-brands{
+  font-size: 40px;
+  
+}
+
+section {
+  text-align: center; 
+  color: white; 
+  width: 220px;
+  margin: auto; /* Centra la sección horizontalmente */
+  padding-top: 20px; 
+}
 
 
+legend{
+  width: auto;
+  float: none;
+}
 
 footer{
   color: white;
   text-align: center;
-  
 }
+fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Añade un borde delgado para mejorar la visibilidad */
+  border-color: rgb(0, 38, 255);
+}
+
+
 
   /* Media Queries para Responsividad */
   @media (max-width: 1200px) {
-    
     .pri img {
       width: 100%; /* Ajusta el tamaño de la imagen para pantallas medianas */
       height: auto; /* Mantén la relación de aspecto */
       margin: 0 auto; /* Centra la imagen */
-      
     }
     .porta img {
       width: 100%; /* Ajusta el tamaño de la imagen para pantallas medianas */
       height: auto; /* Mantén la relación de aspecto */
       margin: 0 auto; /* Centra la imagen */
-      
     }
     
   }
@@ -281,7 +298,6 @@ footer{
       width: 100%; /* Ajusta el tamaño de la imagen para pantallas medianas */
       height: auto; /* Mantén la relación de aspecto */
       margin: 0 auto; /* Centra la imagen */
-      
     }
   
     .pri h3 {
@@ -311,6 +327,7 @@ footer{
     }
   }
   
+
 .typing {
     font-family: monospace;
     white-space: nowrap;

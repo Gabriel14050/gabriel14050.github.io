@@ -1,6 +1,7 @@
 // Definición de las traducciones
 const translations = {
     "es": {
+      "Desarrollo Freelancer":"Desarrollo Freelancer",
       "Inicio": "Inicio",
       "Habilidades": "Habilidades",
       "Proyectos": "Proyectos",
@@ -23,10 +24,14 @@ const translations = {
       "Inicios de sesión interactivos y llamativos con la capacidad de registrar e iniciar a los usuarios usando bases de datos":
         "Inicios de sesión interactivos y llamativos con la capacidad de registrar e iniciar a los usuarios usando bases de datos",
       "Desarrollado por: Gabriel Jaramillo": "Desarrollado por: Gabriel Jaramillo",
+      "Correo": "Correo",
+      "Nombre": "Nombre",
+      "Telefono": "Telefono",
       "Cambiar a Inglés": "Cambiar a Inglés",
       "Cambiar a Español": "Cambiar a Español"
     },
     "en": {
+      "Desarrollo Freelancer":"Freelancer Development",
       "Inicio": "Home",
       "Habilidades": "Skills",
       "Proyectos": "Projects",
@@ -49,6 +54,9 @@ const translations = {
       "Inicios de sesión interactivos y llamativos con la capacidad de registrar e iniciar a los usuarios usando bases de datos":
         "Interactive and attractive logins with the ability to register and log in users using databases",
       "Desarrollado por: Gabriel Jaramillo": "Developed by: Gabriel Jaramillo",
+      "Correo": "Mail",
+      "Telefono": "Phone",
+      "Nombre": "Name",
       "Cambiar a Inglés": "Switch to English",
       "Cambiar a Español": "Switch to Spanish"
     }
@@ -56,7 +64,7 @@ const translations = {
   
   // Función para traducir la página
   function translatePage(lang) {
-    $('[data-translate-ke]').each(function () {
+    $('[data-translate-key]').each(function () {
       const key = $(this).data('translate-key');
       $(this).text(translations[lang][key]);
     });
